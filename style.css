@@ -57,6 +57,9 @@ nav a.home {
 section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 .parents {
     display: flex;
@@ -231,4 +234,5 @@ section {
         justify-content: flex-start;
     }
 }
+
 
