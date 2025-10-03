@@ -58,8 +58,8 @@ section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
     display: flex;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center; /* Tengah horizontal */
+    align-items: center; /* Tengah vertikal */
 }
 .parents {
     display: flex;
@@ -96,7 +96,7 @@ section {
 }
 
 .content p {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto 30px;
     color: #ffffff;
     font-size: 25px;
@@ -104,6 +104,8 @@ section {
 
 .content {
     max-width: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons {
@@ -219,12 +221,13 @@ section {
     .social-icons {
         flex: 1;
         padding: 0 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .social-icons {
         justify-content: flex-start;
     }
 }
-
 
 
