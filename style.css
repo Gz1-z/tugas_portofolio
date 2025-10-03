@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #011b3b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00bcd4;
+    text-decoration: none;
+
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #083c7c;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+nav a:hover,
+nav a.home {
+    color: #00bcd4;
+    font-size: 1.5rem;
+}
+
+/* Section parents */
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+.parents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10%;
+    text-align: center;
+    justify-content: center;
+    padding: 85px;
+    background-color: black;
+    color: white;
+}
+
+/* Gambar */
+.gambar img {
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px #53e8fca2;
+}
+
+/* Content */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.content p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #ffffff;
+}
+
+.content {
+    max-width: 500px;
+}
+
+
+/* .gambar img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px cyan;
+  display: flex;
+} */
+
+
+
+.social-icons {
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.social-icons button {
+  background-color: cyan;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  background-color: #0097a7;
+  transform: scale(1.3) translateY(-5px);
+
+
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: navy;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #011b3b;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+}
+
+
+
+
+/* Social Icons */
+.social-icons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.social-icons a {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0097a7;
+    transform: scale(1.3) translateY(-5px);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #011b3b;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #083c7c;
+    color: #cee1ff;
+    transform: scale(1.3) translateY(-5px);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .parents {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        position: absolute;
+    }
+
+    .gambar,
+    .content,
+    .social-icons {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
